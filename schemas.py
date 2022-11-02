@@ -6,7 +6,7 @@ CSRF_KEY = config('CSRF_KEY')
 
 
 class CsrfSettings(BaseModel):
-    select_key: str = CSRF_KEY
+    secret_key: str = CSRF_KEY
 
 
 class Todo(BaseModel):
